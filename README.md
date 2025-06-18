@@ -55,8 +55,8 @@ We blend creativity with deep technical knowledge to build solutions that scale.
 
 ## 📬 Contact
 
-📧 Email: [info@nexetlab.com](mailto:info@nexetlab.com)  
-🌐 Website: [https://nexetlab.com](https://nexetlab.com)
+📧 Email: [nexetlab@gmail.com](mailto:nexetlab@gmail.com)  
+🌐 Website: [https://nexetlab.github.io/](https://nexetlab.github.io/)
 
 ---
 
