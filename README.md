@@ -31,15 +31,15 @@ We blend creativity with deep technical knowledge to build solutions that scale.
 ## 📊 GitHub Stats
 
 <!-- Replace with actual GitHub username -->
-![Tanzin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=TanzinAbdul&show_icons=true&theme=radical)
+![Tanzin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=nexetlab&show_icons=true&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TanzinAbdul&layout=compact&theme=tokyonight)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nexetlab&layout=compact&theme=tokyonight)
 
 ---
 
 ## 📈 Activity Graph
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=TanzinAbdul&theme=github-compact)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nexetlab&theme=github-compact)
 
 ---
 
