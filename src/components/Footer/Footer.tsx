@@ -89,7 +89,7 @@ export const Footer = () => {
         </div>
         
         <div className={styles.copyright}>
-          <p>&copy; {new Date().getFullYear()} DigitalAgency. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} neXet Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>

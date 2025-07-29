@@ -26,7 +26,7 @@ export const Navbar = () => {
       // Set new timeout to expand navbar after 1 second of no scrolling
       const newTimeout = setTimeout(() => {
         setIsCollapsed(false);
-      }, 1000);
+      }, 3000);
       
       setScrollTimeout(newTimeout);
     };
@@ -69,6 +69,15 @@ export const Navbar = () => {
         </svg>
         <span>Services</span>
       </a>
+
+      <a href="#pricing" className={styles.navLink}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="12" cy="12" r="10" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+          <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+          <path d="M12 18V6" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+        </svg>
+        <span>Pricing</span>
+      </a>
       
       <a href="#portfolio" className={styles.navLink}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -79,15 +88,6 @@ export const Navbar = () => {
           <path d="m2 14 4.5-4.5a2 2 0 0 1 2.83 0L16 16" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
         </svg>
         <span>Work</span>
-      </a>
-      
-      <a href="#pricing" className={styles.navLink}>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <circle cx="12" cy="12" r="10" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-          <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-          <path d="M12 18V6" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-        </svg>
-        <span>Pricing</span>
       </a>
       
       <a href="#contact" className={styles.navLink}>
