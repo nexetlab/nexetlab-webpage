@@ -1,0 +1,239 @@
+.section {
+  padding: 6rem 0;
+  background-color: #0f172a;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tier {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  border: 1px solid #334155;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tier:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.highlighted {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 1px #0d9488;
+}
+
+.highlighted:hover {
+  box-shadow: 0 0 0 1px #0d9488, 
+              0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.badge {
+  position: absolute;
+  top: -0.75rem;
+  right: 2rem;
+  background: #0d9488;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1.25rem;
+  border-radius: 9999px;
+}
+
+.tierTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+}
+
+.tierPrice {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d9488;
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.featureIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: #0d9488;
+  margin-top: 0.125rem;
+}
+
+.feature span {
+  font-family: 'Inter', sans-serif;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0d9488, #0891b2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(5, 150, 105, 0.3);
+}
+
+.addOns {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.addOnsTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.addOnsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.addOn {
+  background: #334155;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.addOn:hover {
+  transform: translateY(-0.25rem);
+  background: #3f4a5c;
+}
+
+.addOnName {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.addOnPrice {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #0d9488;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .tiers {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .addOnsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .addOnsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tierPrice {
+    font-size: 2rem;
+  }
+}

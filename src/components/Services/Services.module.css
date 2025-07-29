@@ -1,0 +1,122 @@
+.serviceCard {
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #14b8a6;
+}
+
+.serviceIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.serviceTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #14b8a6;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+}
+
+.serviceListItem {
+  font-family: 'Inter', sans-serif;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bullet {
+  color: #14b8a6;
+  margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .serviceCard {
+    padding: 1.5rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.3rem;
+  }
+  
+  .serviceDescription {
+    font-size: 0.95rem;
+  }
+}
+
+.services {
+  padding: 5rem 0;
+  background-color: #111827;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.sectionSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #9ca3af;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 3rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}

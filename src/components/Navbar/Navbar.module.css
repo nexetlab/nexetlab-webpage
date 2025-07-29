@@ -1,0 +1,229 @@
+.navbar {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(31, 41, 55, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  padding: 0.75rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  display: flex;
+  gap: 0.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+/* Collapsed state */
+.navbar.collapsed {
+  padding: 0.5rem;
+  transform: translateX(-50%) scale(0.85);
+  opacity: 0.7;
+  background: rgba(31, 41, 55, 0.95);
+}
+
+.navbar.collapsed:hover {
+  opacity: 1;
+  transform: translateX(-50%) scale(0.9);
+}
+
+.navLink {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Collapsed link state */
+.collapsed .navLink {
+  padding: 0.5rem;
+  min-width: auto;
+}
+
+.collapsed .navLink span {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  position: absolute;
+  pointer-events: none;
+}
+
+.navLink:hover {
+  background: rgba(20, 184, 166, 0.2);
+  color: #14b8a6;
+  transform: translateY(-2px);
+}
+
+.navLink.active {
+  background: #14b8a6;
+  color: white;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+}
+
+.navLink svg {
+  width: 1rem;
+  height: 1rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.collapsed .navLink svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.navLink span {
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover effect for expanded state when collapsed */
+.collapsed .navLink:hover span {
+  opacity: 1;
+  transform: translateX(0);
+  position: static;
+  pointer-events: auto;
+}
+
+.collapsed .navLink:hover {
+  padding: 0.5rem 1rem;
+  background: rgba(20, 184, 166, 0.2);
+}
+
+/* Icon hover animations */
+.navLink:hover svg {
+  transform: scale(1.1);
+}
+
+/* Individual icon styling improvements */
+.navLink:nth-child(1) svg {
+  stroke: #10b981; /* Home - Green */
+}
+
+.navLink:nth-child(2) svg {
+  stroke: #3b82f6; /* Services - Blue */
+}
+
+.navLink:nth-child(3) svg {
+  stroke: #8b5cf6; /* Work - Purple */
+}
+
+.navLink:nth-child(4) svg {
+  stroke: #f59e0b; /* Pricing - Orange */
+}
+
+.navLink:nth-child(5) svg {
+  stroke: #ef4444; /* Contact - Red */
+}
+
+.navLink:hover svg,
+.navLink.active svg {
+  stroke: currentColor;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .navbar.collapsed {
+    padding: 0.375rem;
+  }
+  
+  .navLink {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+  }
+  
+  .collapsed .navLink {
+    padding: 0.375rem;
+  }
+  
+  .navLink span {
+    display: none;
+  }
+  
+  .navLink svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .collapsed .navLink svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  
+  /* Show text on hover for mobile when collapsed */
+  .collapsed .navLink:hover span {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: calc(100% - 2rem);
+    justify-content: space-around;
+    gap: 0.25rem;
+  }
+  
+  .navbar.collapsed {
+    width: calc(90% - 2rem);
+  }
+  
+  .navLink {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .collapsed .navLink {
+    padding: 0.375rem;
+  }
+}
+
+/* Additional animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.collapsed {
+  animation: pulse 2s ease-in-out;
+}
+
+/* Smooth scrolling hint */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #14b8a6, transparent);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.collapsed::before {
+  opacity: 1;
+}

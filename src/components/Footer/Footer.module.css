@@ -1,0 +1,152 @@
+.footer {
+  background-color: #030712;
+  padding: 4rem 0 2rem;
+  color: #9ca3af;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footerLogo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footerDescription {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialLink {
+  color: #9ca3af;
+  width: 32px; /* Reduced from 40px */
+  height: 32px; /* Reduced from 40px */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+.socialLink svg {
+  width: 70px; /* Added to control icon size */
+  height: 70px; /* Added to control icon size */
+}
+
+.socialLink:hover {
+  color: white;
+  background-color: #14b8a6;
+}
+
+.footerHeading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.75rem;
+}
+
+.footerLinks a {
+  font-family: 'Inter', sans-serif;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footerLinks a:hover {
+  color: #14b8a6;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contactInfoItem svg {
+  width: 30px; /* Added consistent icon sizing */
+  height: 30px; /* Added consistent icon sizing */
+  margin-right: 0.75rem;
+  color: #14b8a6;
+  flex-shrink: 0;
+  margin-top: 0.125rem; /* Better alignment */
+}
+
+.contactInfoText {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.copyright {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+  font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .footerHeading {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+  
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+  }
+  
+  .footerLogo,
+  .footerHeading {
+    text-align: center;
+  }
+  
+  .footerLinks {
+    text-align: center;
+  }
+  
+  .contactInfoItem {
+    justify-content: center;
+  }
+}
