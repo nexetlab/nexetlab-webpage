@@ -2,7 +2,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { HeroSection } from './components/HeroSection/HeroSection';
 import { Services } from './components/Services/Services';
-import { Pricing } from './components/Pricing/Pricing';
+{/*import { Pricing } from './components/Pricing/Pricing'; */}
 import { Portfolio } from './components/Portfolio/Portfolio';
 import { Testimonials } from './components/Testimonials/Testimonials';
 import { About } from './components/About/About';
@@ -24,7 +24,7 @@ function App() {
         <main>
           <section id="home"><HeroSection /></section>
           <section id="services"><Services /></section>
-          <section id="pricing"><Pricing /></section>
+          {/* <section id="pricing"><Pricing /></section> */}
           <section id="portfolio"><Portfolio /></section>
           <section id="testimonials"><Testimonials /></section>
           <section id="about"><About /></section>

@@ -37,17 +37,17 @@ const Topbar: React.FC = () => {
           <div className={styles.location}>
             <span>Sydney, Australia</span>
           </div>
-          <a href="mailto:hello@nexetlab.com" className={styles.email}>
-            <span>hello@nexetlab.com</span>
+          <a href="mailto:nexetlab@gmail.com" className={styles.email}>
+            <span>nexetlab@gmail.com</span>
           </a>
           <div className={styles.socialIcons}>
-            <a href="https://facebook.com" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61576181877541" aria-label="Facebook">
               <FaFacebook className={styles.socialIcon} />
             </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
+            <a href="https://www.facebook.com/profile.php?id=61576181877541" aria-label="LinkedIn">
               <FaLinkedin className={styles.socialIcon} />
             </a>
-            <a href="https://github.com" aria-label="GitHub">
+            <a href="https://github.com/nexetlab" aria-label="GitHub">
               <FaGithub className={styles.socialIcon} />
             </a>
           </div>

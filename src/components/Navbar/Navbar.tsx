@@ -70,14 +70,16 @@ export const Navbar = () => {
         <span>Services</span>
       </a>
 
+      {/*
       <a href="#pricing" className={styles.navLink}>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <circle cx="12" cy="12" r="10" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-          <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-          <path d="M12 18V6" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-        </svg>
-        <span>Pricing</span>
-      </a>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+                <path d="M12 18V6" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+              </svg>
+              <span>Pricing</span>
+            </a>
+      */}
       
       <a href="#portfolio" className={styles.navLink}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
