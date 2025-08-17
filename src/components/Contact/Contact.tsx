@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,17 +18,35 @@ export const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
+
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+
+    try {
+      await emailjs.send(
+        'service_gtxssoz',        // your service ID
+        'template_86k9w9n',        // <-- replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'mtXoxrHyV660URf_W'       // your Public Key
+      );
+
+      alert('Thank you for your message! We will get back to you soon.');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      alert('Something went wrong while sending your message. Please try again.');
+    }
   };
 
   return (
@@ -110,7 +129,7 @@ export const Contact = () => {
               </div>
               <div className={styles.infoContent}>
                 <h4 className={styles.infoLabel}>Phone</h4>
-                <p className={styles.infoText}>+61 2 1234 5678</p>
+                <p className={styles.infoText}>+61 451 612 561</p>
               </div>
             </div>
 
@@ -122,7 +141,7 @@ export const Contact = () => {
               </div>
               <div className={styles.infoContent}>
                 <h4 className={styles.infoLabel}>Email</h4>
-                <p className={styles.infoText}>contact@nexetlab.com</p>
+                <p className={styles.infoText}>nexetlab@gmail.com</p>
               </div>
             </div>
 
@@ -135,7 +154,7 @@ export const Contact = () => {
               </div>
               <div className={styles.infoContent}>
                 <h4 className={styles.infoLabel}>Office</h4>
-                <p className={styles.infoText}>123 Innovation Drive</p>
+                {/* <p className={styles.infoText}>123 Innovation Drive</p> */}
                 <p className={styles.infoText}>Sydney, NSW 2000</p>
                 <p className={styles.infoText}>Australia</p>
               </div>
