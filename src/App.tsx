@@ -4,7 +4,7 @@ import { HeroSection } from './components/HeroSection/HeroSection';
 import { Services } from './components/Services/Services';
 {/*import { Pricing } from './components/Pricing/Pricing'; */}
 import { Portfolio } from './components/Portfolio/Portfolio';
-import { Testimonials } from './components/Testimonials/Testimonials';
+{/* import { Testimonials } from './components/Testimonials/Testimonials'; */}
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
 import { FAQ } from './components/FAQ/FAQ';
