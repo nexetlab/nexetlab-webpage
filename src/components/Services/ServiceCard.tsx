@@ -54,8 +54,8 @@ export const ServiceCard = ({ service, index }: ServiceCardProps) => {
           </ul>
         </div>
         
-        <div className={styles.cardFooter}>
-          <button className={styles.learnMoreBtn}>
+        {/* <div className={styles.cardFooter}>
+           <button className={styles.learnMoreBtn}>
             <span>Learn More</span>
             <svg 
               className={styles.arrowIcon} 
@@ -65,9 +65,9 @@ export const ServiceCard = ({ service, index }: ServiceCardProps) => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
-        </div>
-      </div>
+          </button> 
+        </div>*/}
+      </div> 
       
       {/* Floating particles */}
       <div className={styles.floatingParticles}>

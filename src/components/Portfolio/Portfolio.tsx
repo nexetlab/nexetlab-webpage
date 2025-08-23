@@ -119,7 +119,7 @@ export const Portfolio = () => {
               <div className={styles.content}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDescription}>{project.description}</p>
-                <button className={styles.viewButton}>
+                {/* <button className={styles.viewButton}>
                   View Case Study
                   <svg 
                     className={styles.arrowIcon}
@@ -134,7 +134,7 @@ export const Portfolio = () => {
                       d="M14 5l7 7m0 0l-7 7m7-7H3"
                     />
                   </svg>
-                </button>
+                </button>*/}
               </div>
             </article>
           ))}
