@@ -18,6 +18,9 @@ export const HeroSection = () => {
           >
             Get a Quote
           </a>
+          <div className="mx-4 flex items-center h-full">
+    <span className="h-6 w-px bg-gray-400"></span>
+  </div>
           <a 
             href="#portfolio" 
             className="bg-transparent border-2 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-white font-bold py-3 px-6 rounded-lg transition duration-300"

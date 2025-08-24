@@ -10,8 +10,12 @@ import { Contact } from './components/Contact/Contact';
 import { FAQ } from './components/FAQ/FAQ';
 import { Terms } from './components/Terms/Terms';
 import { Footer } from './components/Footer/Footer';
+
 import  Topbar  from './components/Topbar/Topbar';
+
+
 import './index.css';
+
 
 function App() {
   return (
